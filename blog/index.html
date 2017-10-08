@@ -46,17 +46,17 @@ sitemap:
 		<!-- Pagination links -->
 		<div class="pagination">
 			{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer posts</a>
+				<a href="{{ paginator.previous_page_path }}" class="previous btn">&larr; Новые посты</a>
 			{% else %}
-				<span class="previous">No Newer Posts</span>
+				<span class="previous">Нет новых постов</span>
 			{% endif %}
 
-			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+			<span class="page_number ">{{ paginator.page }} или {{ paginator.total_pages }}</span>
 
 			{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path }}" class="next btn">Older posts &rarr;</a>
+				<a href="{{ paginator.next_page_path }}" class="next btn">Старые посты &rarr;</a>
 			{% else %}
-				<span class="next">No Older Posts</span>
+				<span class="next">Нет старых постов</span>
 			{% endif %}
 		</div>
 	</div>
