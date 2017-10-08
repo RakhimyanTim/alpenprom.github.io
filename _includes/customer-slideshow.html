@@ -1,7 +1,19 @@
+---
+layout: default
+images:
+  - image_path: /img/customers/netflix/home.png
+    alt: Devices Home Page
+  - image_path: /img/customers/netflix/devices.png
+    alt: Devices
+  - image_path: /img/customers/netflix/nrtv.png
+    alt: NRTV
+  - image_path: /img/customers/netflix/languages.png
+    alt: Internationlisation
+  - image_path: /img/customers/netflix/geo.png
+    alt: Geolocation
+---
 <ul class="photo-gallery">
-	{% for slide in include.slides %}
-		<li data-thumb="{{ slide.image_path }}" data-src="{{ slide.image_path }}">
-			<img class="screenshot" alt="{{ slide.alt }}" src="{{ slide.image_path }}" />
-		</li>
-	{% endfor %}
+  {% for image in page.images %}
+    <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+  {% endfor %}
 </ul>
