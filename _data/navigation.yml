@@ -1,4 +1,6 @@
 
+- link: /
+  name: Главная
 - link: /services/
   name: Услуги
 - link: /blog/
